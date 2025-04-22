@@ -1,0 +1,17 @@
+using python
+read Amazon.in_laptops.html and parse it with beautifulsoup
+find all 
+div with role="listitem" data-asin="B0DSFQ2XC7" data-index="3" data-uuid="22ec4f82-2e26-452c-828d-60455454c5b1" id="22ec4f82-2e26-452c-828d-60455454c5b1" data-component-type="s-search-result" class="sg-col-20-of-24 s-result-item s-asin sg-col-0-of-12 sg-col-16-of-20 AdHolder sg-col s-widget-spacing-small sg-col-12-of-16" data-component-id="5" data-cel-widget="search_result_2"
+
+
+for all the div
+try find h2 with aria-label="Sponsored Ad - Dell Inspiron 3530 Thin &amp; Light Laptop, 13th Gen Intel Core i3-1305U Processor, 8GB, 512GB SSD, 15.6&quot; (39.62cm) FHD 120Hz 250nits, Standard Keyboard, Windows 11+MSO'21 &amp; 15 Month McAfee, Black, 1.62kg" class="a-size-medium a-spacing-none a-color-base a-text-normal"  and store it in Name
+except Name = ""
+
+try find i with  data-cy="reviews-ratings-slot" aria-hidden="true" class="a-icon a-icon-star-small a-star-small-4" and store it in Reviews
+except Reviews = ""
+
+try to find span with class="a-price-whole" and store it in Price
+except Price = ""
+
+open an Excel file and write Names, Reviews and Price in it
